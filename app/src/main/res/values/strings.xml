@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">Dual Audio</string>
-    <string name="btn_permission">Grant Shizuku access</string>
-    <string name="btn_enable">Enable USB + Bluetooth</string>
-    <string name="btn_disable">Disable (normal routing)</string>
-    <string name="btn_refresh">Refresh status</string>
-    <string name="shizuku_not_running">Shizuku isn\'t running. Open the Shizuku app and tap Start.</string>
-    <string name="shizuku_no_permission">Shizuku is running, but Dual Audio doesn\'t have permission yet.</string>
-    <string name="shizuku_connecting">Shizuku OK. Connecting to the routing service…</string>
-    <string name="shizuku_ready">Ready. Routing service is running as shell.</string>
-    <string name="shizuku_too_old">Shizuku is too old; please update the Shizuku app.</string>
-    <string name="legal_notice">Copyright (C) 2026 xTudoS. Free software under the GNU GPL v3.0 or later; it comes with ABSOLUTELY NO WARRANTY. You may redistribute it under those terms.</string>
-    <string name="btn_licenses">Open-source licenses</string>
-    <string name="licenses_title">Open-source licenses</string>
-    <string name="license_app">Dual Audio (GPL-3.0-or-later)</string>
-    <string name="license_third_party">Third-party libraries</string>
+    <string name="app_name">双音频输出</string>
+    <string name="btn_permission">授予 Shizuku 权限</string>
+    <string name="btn_enable">开启 USB + 蓝牙同时输出</string>
+    <string name="btn_disable">关闭（恢复普通音频路由）</string>
+    <string name="btn_refresh">刷新状态</string>
+    <string name="shizuku_not_running">Shizuku 未运行。请打开 Shizuku 应用并点击「启动」。</string>
+    <string name="shizuku_no_permission">Shizuku 正在运行，但「双音频输出」尚未获得权限。</string>
+    <string name="shizuku_connecting">Shizuku 正常，正在连接音频路由服务……</string>
+    <string name="shizuku_ready">已就绪。音频路由服务正以 shell 身份运行。</string>
+    <string name="shizuku_too_old">Shizuku 版本过低，请更新 Shizuku 应用。</string>
+    <string name="legal_notice">版权所有 (C) 2026 xTudoS。本软件为自由软件，遵循 GNU GPL v3.0 或更高版本发布；不提供任何担保。您可以依据上述条款再分发本软件。</string>
+    <string name="btn_licenses">开源许可</string>
+    <string name="licenses_title">开源许可</string>
+    <string name="license_app">双音频输出（GPL-3.0-or-later）</string>
+    <string name="license_third_party">第三方库</string>
 </resources>

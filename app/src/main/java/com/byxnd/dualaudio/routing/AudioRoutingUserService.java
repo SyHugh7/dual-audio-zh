@@ -36,10 +36,10 @@ public class AudioRoutingUserService extends IAudioRoutingService.Stub {
         enabled = true;
         String result;
         try {
-            result = "setPreferredDevicesForStrategy -> " + router.apply();
+            result = "设置首选输出设备 -> " + router.apply();
         } catch (Exception e) {
             // both devices aren't connected yet: the watcher applies it once they are
-            result = "waiting for devices: " + rootMessage(e);
+            result = "正在等待设备连接：" + rootMessage(e);
         }
         startWatcher();
         return result;
@@ -53,7 +53,7 @@ public class AudioRoutingUserService extends IAudioRoutingService.Stub {
             watcher = null;
         }
         try {
-            return "removePreferredDevicesForStrategy -> " + router.clear();
+            return "已清除首选输出设备 -> " + router.clear();
         } catch (Exception e) {
             throw new IllegalStateException(rootMessage(e));
         }
@@ -62,7 +62,7 @@ public class AudioRoutingUserService extends IAudioRoutingService.Stub {
     @Override
     public String status() {
         try {
-            return router.describe() + "\nauto-reapply: " + (enabled ? "on" : "off");
+            return router.describe() + "\n自动恢复：" + (enabled ? "开启" : "关闭");
         } catch (Exception e) {
             throw new IllegalStateException(rootMessage(e));
         }

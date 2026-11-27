@@ -137,7 +137,7 @@ class MainActivity : AppCompatActivity() {
     private fun call(block: (IAudioRoutingService) -> String) {
         val s = service ?: return
         io.execute {
-            val text = runCatching { block(s) }.getOrElse { "error: ${it.message ?: it}" }
+            val text = runCatching { block(s) }.getOrElse { "错误：${it.message ?: it}" }
             runOnUiThread { status.text = text }
         }
     }
@@ -153,7 +153,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showText(title: String, assetPath: String) {
         val text = runCatching { assets.open(assetPath).bufferedReader().use { it.readText() } }
-            .getOrElse { "error: ${it.message ?: it}" }
+            .getOrElse { "错误：${it.message ?: it}" }
         val pad = (16 * resources.displayMetrics.density).toInt()
         val body = TextView(this).apply {
             this.text = text

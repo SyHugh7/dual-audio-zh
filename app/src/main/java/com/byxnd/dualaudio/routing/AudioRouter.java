@@ -90,14 +90,14 @@ public final class AudioRouter {
     /** Human-readable strategy, connected outputs, and current preferred devices. */
     public String describe() throws Exception {
         StringBuilder sb = new StringBuilder();
-        sb.append("STRATEGY_MEDIA id = ").append(strategyId).append('\n');
-        sb.append("connected outputs:\n");
+        sb.append("媒体策略 ID = ").append(strategyId).append('\n');
+        sb.append("已连接的输出设备：\n");
         for (AudioDeviceInfo info : getOutputDevices()) {
-            sb.append("  type=").append(info.getType())
-                    .append(" name=").append(info.getProductName())
-                    .append(" addr=").append(info.getAddress()).append('\n');
+            sb.append("  类型=").append(info.getType())
+                    .append(" 名称=").append(info.getProductName())
+                    .append(" 地址=").append(info.getAddress()).append('\n');
         }
-        sb.append("current preferred devices: ").append(getPreferred());
+        sb.append("当前首选设备：").append(getPreferred());
         return sb.toString();
     }
 
